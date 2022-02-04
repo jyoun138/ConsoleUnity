@@ -124,12 +124,35 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 800px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.connections {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 800px;
+    font-size: 25px;
+    list-style-type: none;
+}
+
+.listings {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.listings a{
+    font-size: 20px;
+    text-decoration: none;
+}
+.listings a:hover{
+    text-decoration: underline;
+}
+
+
+
 #logo {
-    width: 127px;
-    height: 90px;
+    width: 137px;
+    height: 100px;
     margin-left: 50px;
     margin-bottom: 10px;
 }
