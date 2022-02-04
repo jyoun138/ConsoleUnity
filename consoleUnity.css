@@ -148,6 +148,12 @@ body {
     text-decoration: underline;
 }
 
+#connection {
+    width: 150px;
+    height: 200px;
+    
+}
+
 
 
 #logo {
