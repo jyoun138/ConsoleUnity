@@ -1,13 +1,4 @@
 
-/* h2 */
-h2 {
-    margin: 0 0 0 0;
-    padding: 0;
-    text-align: center;
-    font-size: 50px;
-    color: white;
-}
-
 /* header */
 header {
     padding: 0;
@@ -19,7 +10,7 @@ header {
 
 /* navbar */
 #navbar {
-    background-color: rgb(228, 123, 4);
+    background-color: rgb(17, 121, 40);
     margin: 0;
     padding: 0;
 }
@@ -66,8 +57,8 @@ html {
 /* all images on every page remain this specific size */
 img {
     width: 400px;
-    height: 300px;
-    border: 5px solid black;
+    height: 200px;
+    /*border: 5px solid black;*/
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -77,4 +68,16 @@ img {
 body {
     margin: 0;
     padding: 0;
+    color: black;
+}
+
+.overview {
+    margin: 0 auto;
+    width: 800px;
+}
+
+#logo {
+    width: 225px;
+    height: 150px;
+    margin-right: auto;
 }
