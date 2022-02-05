@@ -1,6 +1,6 @@
 
 * {
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* header */
@@ -55,7 +55,7 @@ main {
 
 /* navbar */
 #navbar {
-    background-color: rgb(212, 224, 34);
+    background-color: rgb(19, 18, 18);
     margin: 0;
     padding: 0;
 }
@@ -86,7 +86,7 @@ main {
 
 /* Feedback for navbar */
 #navbar a:hover {
-    color: rgb(77, 75, 75);
+    color: rgb(173, 0, 0);
 }
 
 #navbar a.active {
@@ -126,7 +126,7 @@ main {
 
 /* Feedback for footer */
 #footbar a:hover {
-    color: rgb(77, 75, 75);
+    color: rgb(173, 0, 0);
 }
 
 .overview {
@@ -148,11 +148,13 @@ main {
 .listings {
     font-size: 20px;
     text-decoration: none;
+    color: rgb(173, 0, 0);
 }
 
 .listings a{
     font-size: 20px;
     text-decoration: none;
+    color: rgb(173, 0, 0);
 }
 .listings a:hover{
     text-decoration: underline;
@@ -174,10 +176,46 @@ main {
     height: 90px;
     margin-left: 50px;
     margin-bottom: 10px;
+    float: left;
 }
 
-#side button {
+#side {
     display: inline-block;
     background:rgb(212, 224, 34);
-    margin-bottom: 10px;
+}
+
+/* general navigation bar */
+#generalNav {
+    background-color: rgb(212, 224, 34);
+    margin: 0;
+    padding: 0;
+}
+
+#generalNav ul {
+    padding: 0;
+    margin: auto;
+    text-align: left;
+    background-size: auto;
+}
+
+#generalNav li {
+    display: inline-block;
+    margin: 0;
+}
+
+/* Footer links */
+#generalNav a {
+    margin: 0;
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    padding: 17px ;
+    text-decoration:underline;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+/* Feedback for footer */
+#generalNav a:hover {
+    color: rgb(77, 75, 75);
 }
