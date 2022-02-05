@@ -184,7 +184,7 @@ main {
     float: left;
 }
 
-#side {
+#side button{
     display: inline-block;
     background:rgb(212, 224, 34);
 }
