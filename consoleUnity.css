@@ -76,10 +76,10 @@ main {
 #navbar a {
     margin: 0;
     float: left;
-    color: black;
+    color: rgb(212, 224, 34);
     text-align: center;
     padding: 10px ;
-    text-decoration: none;
+    text-decoration:dashed;
     font-size: 30px;
     font-weight: bolder;
 }
@@ -90,7 +90,7 @@ main {
 }
 
 #navbar a.active {
-    text-decoration: underline rgb(0, 0, 0) ;
+    text-decoration: underline rgb(212, 224, 34);
 }
 
 /* footer */
@@ -127,6 +127,10 @@ main {
 /* Feedback for footer */
 #footbar a:hover {
     color: rgb(173, 0, 0);
+}
+
+#footbar a.active {
+    text-decoration: underline rgb(19, 18, 18);
 }
 
 .overview {
@@ -186,7 +190,7 @@ main {
 
 /* general navigation bar */
 #generalNav {
-    background-color: rgb(212, 224, 34);
+    background-color: rgb(19, 18, 18);
     margin: 0;
     padding: 0;
 }
@@ -203,19 +207,23 @@ main {
     margin: 0;
 }
 
-/* Footer links */
+/* general nav links */
 #generalNav a {
     margin: 0;
     float: left;
     color: rgb(255, 255, 255);
     text-align: right;
     padding: 17px ;
-    text-decoration:underline;
-    font-size: 15px;
+    text-decoration:none;
+    font-size: 30px;
     font-weight: bolder;
 }
 
-/* Feedback for footer */
+/* Feedback for general nav */
 #generalNav a:hover {
-    color: rgb(77, 75, 75);
+    color: rgb(173, 0, 0);
+}
+
+#generalNav a.active {
+    color: rgb(255, 255, 255);
 }
