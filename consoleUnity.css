@@ -1,4 +1,4 @@
-
+/* font for all the pages*/
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -49,6 +49,7 @@ body {
     min-height: 100vh;
 }
 
+/* The footer sticks to the bottom of the page even if more content is added to the page*/
 main {
     flex-grow: 1;
 }
@@ -225,5 +226,5 @@ main {
 }
 
 #generalNav a.active {
-    color: rgb(255, 255, 255);
+    text-decoration:underline rgb(255, 255, 255);
 }
