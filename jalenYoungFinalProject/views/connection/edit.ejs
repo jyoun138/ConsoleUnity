@@ -1,0 +1,37 @@
+<%- include('../partials/header.ejs')%>
+<div class="content">
+    <main>
+        <div class="overview">
+            <form method = 'POST' action="/connections/<%= game.id%>?_method=PUT">
+                Title:
+                <input type="text" id="title" name="title" value="<%=game.title%>" size="50" required>
+                <br> <br>
+                Category:  
+                <input type="text" id="category" name="category" value="<%=game.category%>" size="50" required> 
+                <br> <br>
+                Details:  
+                <textarea rows="5" id="details" name="details" cols="50" class="align-top" required minlength="10"> <%=game.details%>"</textarea>  
+                <br> <br>
+                Location:  
+                <input type="text" id="location" name="location" value="<%=game.location%>" size="50" required>  
+                <br> <br>
+                When:  
+                <input type="date" id="date" name="date" value="<%=game.date%>" size="50" required>  
+                <br> <br>
+                Start:  
+                <input type="time" id="startTime" name="startTime" value="<%=game.startTime%>" size="50" required>  
+                <br> <br>
+                End:  
+                <input type="time" id="endTime" name="endTime" size="50" value="<%=game.endTime%>" required>   
+                <br> <br>
+                Image:  
+                <input type="text" id="imageURL" name="imageURL" value="<%=game.imageURL%>" size="50" placeholder="Insert image url" required>   
+                <br> <br>
+                <div id="side"> <button type="submit"> Update </button> </div>
+            </form>
+        </div>
+
+    </main>
+
+</div>
+<%- include('../partials/footer.ejs')%>

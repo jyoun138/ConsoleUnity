@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Overview of website about gamers of any console">
+    <meta name="keywords" content="Videogames, Meet-Ups, Discussion, Consoles">
+    <meta name="author" content="Jalen Young">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Unity</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/nConsoleUnity.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Placing logo and navbar content in header -->
+        
+        <a href="/" >
+            <!-- Created this image from Wix Logo Maker.com -->
+            <img id="logo" src="/images/cuLogo.png" alt="Company logo.">
+        </a>
+    
+        <div id="navbar">
+            <ul>
+                <%if(!user){%>
+                    <li> <a href="/users/login" >Login</a> </li>
+                    <li> <a href="/users/new" >Sign Up</a> </li>
+                <%} else {%>
+                    <li> <a href="/connections/new" >Start a new connection</a> </li>
+                    <li> <a href="/users/profile" >Profile</a> </li>
+                    <li> <a href="/users/logout" >Logout</a> </li>
+                <%}%>
+            </ul>
+        </div>
+    
+        <div id="generalNav">
+            <ul>
+                <li> <a href="/" >Home</a> </li>
+                <li> <a href="/connections" >Connection</a> </li>
+                <li>   
+                    <%if(user){%>
+                        <div id="userName">Welcome <%= userName%></div>
+                    <%}%> 
+                </li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+    <%if(errorMessages.length > 0) {
+        errorMessages.forEach(message=>{%>
+            <div class="error"> <%=message%> </div>
+       <% });
+    }%>
+
+    <%if(successMessages.length > 0) {
+        successMessages.forEach(message=>{%>
+            <div class="success"> <%=message%> </div>
+       <% });
+    }%>

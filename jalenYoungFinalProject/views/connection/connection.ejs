@@ -1,0 +1,20 @@
+<%- include('../partials/header.ejs')%>
+<div class="content">
+    <div class="overview">
+    <%if(games.length) {%>
+
+        <%categories.forEach(category=>{%>
+            <h3><%=category%></h3>
+            <%games.forEach(game=>{%>
+                <%if(game.category === category){%>
+                    <div class="whitespace"><a href = "/connections/<%=game.id%>"> <p><%=game.title%></p> </a> </div>
+                <%}%>   
+            <% });%>
+        <%})%>
+    <%} else {%>
+        <p>There are no connections to display.</p>
+    <%}%>
+    </div>
+</div>
+<%- include('../partials/footer.ejs')%>
+  

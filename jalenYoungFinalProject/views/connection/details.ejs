@@ -1,0 +1,44 @@
+<%- include('../partials/header.ejs')%>
+    <div class = "content">
+        <main>
+            <div class="overview"><h3> <%= game.title%> </h3> </div>
+            <ul class="connections">
+                <li> <a href="/"> <img id="connectionImg" src="<%= game.imageURL%>" alt="Image related to connection."> </a></li>
+                <li><ul class="listings"> 
+                        <li> Hosted By: <%= game.hostName.firstName + ' ' + game.hostName.lastName%></li>
+                        <li> Date: <%= game.date%></li>
+                        <li> Start at: <%= game.startTime%> </li>
+                        <li>Ends at: <%= game.endTime%></li>
+                        <li>Location: <%= game.location%></li>
+                    </ul>
+                </li>
+            </ul> <br> <br>
+            <div class="overview"><h3> Details </h3> <%= game.details%> <br><br>
+                <div id="side">
+                    <%if(user == game.hostName._id) {%>
+                        <form>
+                            <button type = "submit" formmethod= "GET" formaction="/connections/<%= game.id%>/edit">Edit</button>
+                            <button type = "submit" formmethod= "POST" formaction="/connections/<%= game.id%>/?_method=DELETE">Delete</button>
+                        </form>
+                    <%}%>
+                </div>
+        
+                <h3><%= rsvp%> Members RSVP'd</h3>
+                <%if(user != game.hostName._id) {%>
+                <h3>RSVP to attend!</h3>
+                <form action="/connections/<%=game.id%>/rsvp" method="POST">
+                    <div id="side">
+                        <button name="rsvp" value="Yes">Yes</button>
+                        <button name="rsvp" value="Maybe">Maybe</button>
+                        <button name="rsvp" value="No">No</button>
+                    </div>
+                </form>
+                <%}%>
+
+
+            </div>
+
+        </main>
+    </div>
+    <%- include('../partials/footer.ejs')%>
+  
